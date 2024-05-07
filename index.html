@@ -7,35 +7,59 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
+            text-align: center;
+            background-color: #f4f4f4;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
         }
 
         #text-container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: #007bff; /* Blue color */
+            font-size: 18px; /* Adjust font size as needed */
+            line-height: 1.6; /* Adjust line height as needed */
+        }
+
+        .clicker {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #007bff;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
             border-radius: 5px;
-            line-height: 1.6;
-            overflow-wrap: break-word;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
 </head>
 <body>
     <header>
         <h1>Bible Text Display</h1>
     </header>
-    <div id="text-container"></div>
+    <div class="container" id="text-container"></div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
